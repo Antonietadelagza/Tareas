@@ -7,9 +7,10 @@ print('\tque no son del día. Después el programa debe mostrar el precio habitu
 print('\tde pan, el descuento que se le hace por no ser fresca y el total a pagar\n')
 barras = int(input('\n\t¿Cuántas barras frías vendiste? '))
 precio = 27 
-descuento = 0.6
-pago = barras * precio * (1 - descuento)
-print('\n\tEl precio de una barra de pan fresca es: $', precio
-print('\tEl descuento en una barra fría es: ', descuento*100, '%')
-print("\tEl total a pagar es: $", round(pago,2)
- 
+des = barras*0.6*precio
+pago = barras * des
+print('\n\tEl precio de una barra de pan fresca es: $', precio)
+print('\n\tEl total por ',barras, 'barras es: $',precio*barras)
+print('\tEl  60% descuento por barra fría es: -',round(des,2))
+print('\tEl total a pagar por ',barras, 'frías es: $',round(pago,2))
+print('\n\n')
